@@ -9,15 +9,6 @@ import plotly.graph_objects as go
 
 load_dotenv()
 
-def fetch_movie_data(page_number, api_key='541a1398160b1ed6903fbf4716a83389'):
-    url = f"https://api.themoviedb.org/3/movie/popular?api_key={api_key}&page={page_number}"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()['results']
-    else:
-        print(f"Failed to get data: {response.status_code}")
-        return None
-
 def fetch_movie_data(page_number, file_name="top_mivies.json"):
     api_key = os.getenv("TMDb_API_KEY")
     if not api_key:
