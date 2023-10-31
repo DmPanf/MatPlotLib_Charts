@@ -1,4 +1,4 @@
-# MatPlotLib_Charts
+# MatPlotLib and Plotly Charts
 
 ![image](https://github.com/DmPanf/MatPlotLib_Charts/assets/99917230/95955161-7770-4ae1-8a22-11aa4969bfea)
 
